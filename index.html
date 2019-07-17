@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <form name="myform" action="" onsubmit="return validateform()">
+                <h2 class="font-weight-bold">Application form</h2> <br>
+                <!-- name -->
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input name="fullname" type="text" class="form-control p-4" id="full_name" aria-describedby="emailHelp" placeholder="Your Full Name">
+                </div>
+                <!-- email or phone -->
+                <div class="form-group">
+                    <label for="exampleInputEmail1">How can we contact you?</label>
+                    <input name="email" type="text" class="form-control foremail p-4" id="email_name" aria-describedby="emailHelp" placeholder="Email">
+                    <input name="phone" type="tel" class="form-control forphone p-4" id="phone_name" aria-describedby="emailHelp" placeholder="Phone">
+                    <small id="emailHelp" class="form-text text-white   ">We'll never share your email with anyone else.</small>
+                </div>
+                <!-- browse file for cv -->
+                <div class="cv form-group mt-5">
+                    <label name="file" for="exampleInputEmail1">CV or Resume <span class="text-optional">(Optional)</span> </label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                            aria-describedby="inputGroupFileAddon01">
+                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                    </div>
+                    <div class="pdf-text mt-3">We accept pdf files only.</div>
+                </div>
+                <!-- batch -->
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Which batch are you interested?</label>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value=""> <span class="month">October 2019</span></label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value=""> <span class="month">January 2020</span></label>
+                    </div>
+                </div>
+                <!-- motivation -->
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Motivation</label>
+                    <textarea name="textarea" placeholder="Share your motivation to take part in this program." class=" p-3 form-control rounded-1" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <!-- apply button -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-outline-primary py-2 px-5">Apply</button>
+                </div>
+            </form>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>

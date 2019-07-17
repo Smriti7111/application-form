@@ -1,0 +1,56 @@
+body{
+    /* background:#f3f8ff; */
+
+    background:#f3f8ff;
+
+}
+.container{
+    width:55% !important;
+    margin-top:5rem;
+    margin-bottom:5rem;
+    box-shadow: 1.5px 1px 6px 0px rgb(170, 165, 165);
+    background-color:white;
+    padding:2rem !important;
+    
+}
+form .container h2{
+    font-weight:bold;
+    font-size: 1em;
+}
+.text-optional{
+    color:rgb(167, 164, 164);
+    font-size:0.8rem;
+}
+.pdf-text{
+    color:rgb(167, 164, 164);
+    font-size:1rem;
+}
+.foremail{
+   width:28%;
+   float:left;
+   position:absolute;
+}
+.forphone{
+    margin-top:2.45rem ;
+    width:40%;
+    float:right;
+    
+}
+.btn{
+    position:relative;
+    left:41%;
+}
+.month{
+    padding-left:0.3rem;
+}
+label{
+    font-size: 1.3rem;
+}
+input{
+    font-size:0.9rem;
+}
+.form-control:focus{
+    box-shadow:none;
+    border:1px solid blue;
+}
+
